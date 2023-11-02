@@ -1,3 +1,203 @@
 body {
-  background: papayawhip;
+  background: peachpuff;
+  font-size: 2em;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 20vh;
+  margin: 1em;
+}
+
+aside section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 20vh;
+  margin: 1em;
+}
+
+.a, .b, .c, .d, .e, .f {
+  margin: .25em;
+}
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: blue;
+  width: 100%;
+}
+
+.c {
+  background-color: violet;
+  width: 30%;
+}
+
+.d {
+  background-color: navy;
+  width: 30%;
+}
+
+.e {
+  background-color: whitesmoke;
+  width: 30%;
+}
+
+.f {
+  background-color: goldenrod;
+}
+
+@media(min-width: 1000px){
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    height: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 30vh;
+  }
+  aside {
+    flex: 1;
+  }
+
+  aside section {
+    display: flex;
+    flex-basis: 70%;
+  }
+
+  footer {
+    width: 20%;
+    height: 75vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* body {
+  background: peachpuff;
+  font-size: 2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 20vh;
+  margin: 1em;
+}
+
+aside section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.a, .b, .c, .d, .e, .f{
+  margin: .25em;
+}
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: blue;
+  width: 100%;
+  flex-grow: 4;
+  min-height: 40vh;
+}
+
+.c {
+  background-color: violet;
+  width: 30%;
+  height: 18vh;
+}
+
+.d {
+  background-color: navy;
+  width: 30%;
+  height: 18vh;
+}
+
+.e {
+  background-color: whitesmoke;
+  width: 30%;
+  height: 18vh;
+}
+
+.f {
+  background-color: goldenrod;
+  width: 100vw;
+  height: 15vh;
+}
+
+@media(min-width: 1000px){
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 30vh;
+  }
+  aside {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  aside section {
+    display: flex;
+  }
+
+  .b {
+    width: 6vw;
+  }
+  
+  .f {
+    width: 20%;
+    height: 75vh;
+    align-self: flex-end;
+  }
+} */

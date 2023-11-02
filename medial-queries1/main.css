@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
+  margin: 8px;
+  font-size: 2em;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  margin: 1em;
+  
+}
+
+.a {
+  flex-grow: 1;
+  margin: .5em;
+  background: teal;
+}
+.b {
+flex-grow: 5;
+margin: .5em;
+background: teal;
+}
+.c {
+flex-grow: 1;
+margin: .5em;
+background: teal;
+}
+
+@media(min-width: 1000px) {
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100vw;
+    height: 30vh;
+  }
+  .b, .c {
+    height: 100vh;
+  }
 }

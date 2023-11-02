@@ -1,3 +1,102 @@
 body {
   background: peachpuff;
+  font-size: 2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 20vh;
+  margin: 1em;
+}
+
+aside section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+
+.content {
+  display: flex;
+}
+
+footer {
+  height: 40vh;
+  margin: 1em;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  margin: .25em;
+}
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: blue;
+  width: 30%;
+}
+
+.c {
+  background-color: violet;
+  width: 30%;
+}
+
+.d {
+  background-color: navy;
+  width: 30%;
+}
+
+.e {
+  background-color: whitesmoke;
+  width: 30%;
+}
+
+.f {
+  background-color: goldenrod;
+  width: 30%;
+}
+
+.g {
+  background-color: teal;
+  width: 30%;
+}
+
+.h {
+  background-color: limegreen;
+}
+
+@media(min-width: 1000px){
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    height: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 30vh;
+  }
+  aside {
+    flex: 1;
+  }
+
+  aside section {
+    display: flex;
+    flex-basis: 70%;
+  }
+
+  footer {
+    width: 20%;
+    height: 75vh;
+  }
 }
